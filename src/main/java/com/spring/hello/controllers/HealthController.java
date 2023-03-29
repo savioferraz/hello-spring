@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping
+@RequestMapping("/health")
 
 public class HealthController {
 
-    @GetMapping("/health")
+    @GetMapping
     public String ReportHealth() {
         return "Running on port 8080";
     }
